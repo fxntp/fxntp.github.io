@@ -1,0 +1,16 @@
+body {
+  background-image: url("B7.svg");
+  background-repeat: no-repeat;
+  background-attachment: fixed; 
+  /* background-size: 1280px 800px; */
+  
+}
+.tableDATA{
+  font-family: 'Roboto', sans-serif;
+  background-color: #d6d6e7;
+  opacity: 1;
+  margin-left: 59px;
+  margin-right: 74px;
+
+}
+

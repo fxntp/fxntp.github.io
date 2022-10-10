@@ -26,7 +26,6 @@ function insertSubmit(event) {
   })
     .then((res) => res.json())
     .then((json) => {
-        alert('Successully'+ json.id )
     })
     .catch((error) => {
       console.log(error.message);
