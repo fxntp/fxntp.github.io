@@ -1,16 +1,26 @@
 body {
   background-image: url("B7.svg");
   background-repeat: no-repeat;
-  background-attachment: fixed; 
+  background-attachment: fixed;
   /* background-size: 1280px 800px; */
-  
+
 }
-.tableDATA{
-  font-family: 'Roboto', sans-serif;
-  background-color: #d6d6e7;
+
+.tableDATA {
+  font-family: "Audiowide", sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  color: #ddd;
+}
+th, td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+tr:nth-child(even){
+  background-image: linear-gradient(blue , pink , purple);
   opacity: 1;
-  margin-left: 59px;
-  margin-right: 74px;
-
 }
-
+tr:hover{
+  background-color: rgb(202, 165, 238);
+}

@@ -10,21 +10,19 @@ img {
   position: absolute;
 }
 .circle {
+  content: "";
   position: absolute;
   width: 400px; /* ความกว้าง */
   height: 400px; /* ความสูง */
-  background-image: linear-gradient(to right, #ab52cc 10%, #af01ef 50%, #291b5a 90%); /* สี */
-  
-  /* -moz-border-radius: 250px;
-  -webkit-border-radius: 250px; */
+  background-image: linear-gradient(to right, #af01ef , #291b5a , #ab52cc );
   border-radius: 200px;
   right: 38px;
   left: 969px;
   top: 288px;
   z-index: -1;
-  background-position: left;
-  transition :background-position  3s ;
+  filter: blur(2px);
 }
+
 
 
 /*nameMain*/
@@ -35,8 +33,9 @@ img {
   background-clip: text;
   -webkit-background-clip: text; /*เลือก text*/
   -webkit-text-fill-color: transparent; /*เลือกพพื้นที่ของ text*/
-  animation: animate 2s linear infinite;
+  animation: animate 4s linear infinite;
   font-size: 100px;
+  
 }
 @keyframes animate {
   to {
@@ -49,17 +48,21 @@ h2 {
   color: white;
 }
 .mainBtn {
-  margin-top: 70px;
-  margin: 12em;
+  top: 141.222;
+  margin-top: 42px;
+  left: 293px;
   display: block;
+  position: absolute;
+
 }
 .glow-on-hover {
+  font-family: "Audiowide", sans-serif;
   width: 220px;
   height: 50px;
   border: none;
   outline: none;
   color: #fff;
-  background: #00ffd5;
+  background: #814fc3;
   cursor: pointer;
   position: relative;
   z-index: 0;
@@ -70,10 +73,6 @@ h2 {
   content: "";
   background: linear-gradient(
     45deg,
-    #ff0000,
-    #ff7300,
-    #fffb00,
-    #48ff00,
     #00ffd5,
     #002bff,
     #7a00ff,
@@ -88,44 +87,11 @@ h2 {
   filter: blur(5px);
   width: calc(100% + 4px);
   height: calc(100% + 4px);
-  animation: glowing 20s linear infinite;
   opacity: 0;
   transition: opacity 0.3s ease-in-out;
   border-radius: 10px;
 }
-
-.glow-on-hover:active {
-  color: rgb(255, 0, 247);
-}
-
-.glow-on-hover:active:after {
-  background: transparent;
-}
-
 .glow-on-hover:hover:before {
   opacity: 1;
 }
 
-.glow-on-hover:after {
-  z-index: -1;
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background: #111;
-  left: 0;
-  top: 0;
-  border-radius: 10px;
-}
-
-@keyframes glowing {
-  0% {
-    background-position: 0 0;
-  }
-  50% {
-    background-position: 400% 0;
-  }
-  100% {
-    background-position: 0 0;
-  }
-}
