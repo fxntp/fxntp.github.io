@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title></title>
+  <meta name="description" content="" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="css_main.css" />
+  <link rel="stylesheet" href="css_data_table.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto" rel="stylesheet" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide" />
+</head>
+
+<body>
+  <div class="nameMain" align="center">TEMP TRANSDUCER</div>
+  <img src="human1.svg" />
+  <div class="circle"></div>
+  <div class="content-main" align="center">
+    <div class="content-tb">
+      <input type='text' id="myInput" onkeyup="filterSearch()" placeholder="Search ID or Name">
+      <div class="tableDATA" align="center">
+        <table class="tableData" id="dataTable">
+          <thread>
+            <tr>
+              <th>ID</th>
+              <th>PLANT-SITE</th>
+              <th>NAME</th>
+              <th>TYPE</th>
+              <th>RANGE</th>
+              <th>VALUE</th>
+              <th>UNIT</th>
+            </tr>
+          </thread>
+          <tbody id="data-TT"></tbody>
+        </table>
+      </div>
+
+      <div class="btmain" align="center">
+        <button type="button" class="glow-on-hover" onclick="location.href='html_main.html'">
+          MAIN
+        </button>
+      </div>
+      <script src="js_temp.js"></script>
+      <div class="info">
+        <marquee>Nattapong Pungtim Email: s6301072520041@email.kmutnb.ac.th</marquee>
+      </div>
+</body>
+
+</html>

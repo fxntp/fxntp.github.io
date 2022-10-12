@@ -12,12 +12,15 @@
 body{
   background-image: url("BG1.svg"); 
   background-repeat: no-repeat;
+  
 }
 
 img {
-  margin-top: -150px;
-  margin-left: -130px;
+  width: 100%;
+  margin-top: -120px;
+  margin-left: 100px;
   position: absolute;
+  z-index: -1;
 }
 .circle {
   margin-top: 100px;
@@ -27,7 +30,7 @@ img {
   height: 400px; 
   background-image: linear-gradient(to right, #af01ef , #291b5a , #ab52cc );
   border-radius: 200px;
-  z-index: -1;
+  z-index: -2;
   filter: blur(2px);
 }
 .left{
@@ -41,11 +44,11 @@ img {
 }
 .nameMain {
   font-family: "Audiowide", sans-serif;
-  background: linear-gradient(to right, #ab52cc 10%, #af01ef 50%, #291b5a 90%);
+  background: linear-gradient(to right, blue  , #af01ef , #291b5a ,red );
   background-size: 200% auto;
   background-clip: text;
   -webkit-background-clip: text; 
-  -webkit-text-fill-color: transparent; 
+  -webkit-text-fill-color: transparent;  
   animation: animate 4s reverse infinite;
   font-size: 100px;
 }
@@ -54,11 +57,6 @@ img {
     background-position: 200% center;
   }
 }
-h2 {
-  font-family: "Roboto", sans-serif;
-  color: white;
-}
-
 .btmain{
   margin-top: 42px;
 }
@@ -101,15 +99,11 @@ h2 {
 .glow-on-hover:hover:before {
   opacity: 1;
 }
-
-#myInput{
-  background-position: 10px 12px;
-  position: relative;
-  left: 74px;
-  width: 20%;
-  font-size: 16px;
-  padding: 12px 20px 12px 40px;
-  border: 1px solid #ddd;
-  margin-bottom: 12px;
+.info{
+  font-size: 20px;
+  color: #fff;
+  font-family: "Audiowide", sans-serif;
 }
+/*searchFilter*/
+
 

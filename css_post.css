@@ -1,0 +1,54 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.main{
+  height: fit-content;
+}
+.form {
+  font-family: "Audiowide", sans-serif;
+  background-color: rgb(255, 255, 255);
+  width: 400px;
+  height: 390px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.insert-form {
+  
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+input {
+  display: block;
+  width: 100%;
+  padding: 20px;
+  border: 0;
+  outline: 0;
+  transition: 0.3s;
+}
+
+input:focus {
+  background-color: rgba(142, 214, 214, 0.277);
+  outline-width: 0;
+}
+
+.btn-submit {
+  color:white;
+  font-family: "Audiowide", sans-serif;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 20px;
+  outline: 0;
+  border: 0;
+  background-color: rgb(179, 130, 225);
+}
+
+.btn-submit:hover {
+  background-color: blueviolet;
+}
