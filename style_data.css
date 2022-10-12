@@ -1,5 +1,5 @@
 body {
-  background-image: url("B7.svg");
+  background-image: url("BG1.svg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   /* background-size: 1280px 800px; */
@@ -8,7 +8,7 @@ body {
 
 .tableDATA {
   font-family: "Audiowide", sans-serif;
-  border-collapse: collapse;
+  /* border-collapse: collapse; */
   
   
 }
