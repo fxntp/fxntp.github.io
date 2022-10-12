@@ -10,7 +10,6 @@ img {
   position: absolute;
 }
 .circle {
-  content: "";
   position: absolute;
   width: 400px; /* ความกว้าง */
   height: 400px; /* ความสูง */
@@ -33,7 +32,7 @@ img {
   background-clip: text;
   -webkit-background-clip: text; /*เลือก text*/
   -webkit-text-fill-color: transparent; /*เลือกพพื้นที่ของ text*/
-  animation: animate 4s linear infinite;
+  animation: animate 4s reverse infinite;
   font-size: 100px;
   
 }
@@ -53,6 +52,11 @@ h2 {
   left: 293px;
   display: block;
   position: absolute;
+
+}
+.btmain{
+  
+  margin-top: 42px;
 
 }
 .glow-on-hover {
@@ -93,5 +97,16 @@ h2 {
 }
 .glow-on-hover:hover:before {
   opacity: 1;
+}
+
+#myInput{
+  background-position: 10px 12px;
+  position: relative;
+  left: 74px;
+  width: 20%;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
 }
 

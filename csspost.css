@@ -4,6 +4,7 @@
   text-align: center;
   padding: 1.25em;
   border-radius: 5px;
+  resize: both;
 }
 
 input {

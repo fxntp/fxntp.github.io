@@ -9,18 +9,29 @@ body {
 .tableDATA {
   font-family: "Audiowide", sans-serif;
   border-collapse: collapse;
-  width: 100%;
-  color: #ddd;
+  
+  
 }
-th, td {
-  padding: 8px;
-  text-align: left;
-  border-bottom: 1px solid #ddd;
+
+th {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background:purple ;
+  color: white;
+  font-size: 20px;
+  width: 200px;
+  
 }
-tr:nth-child(even){
-  background-image: linear-gradient(blue , pink , purple);
-  opacity: 1;
-}
+
+
+td {
+  padding: 10px;
+  text-align:left;
+  color: white;
+  background:rgba(201, 165, 238, 0.27) ;
+  
+} 
 tr:hover{
-  background-color: rgb(202, 165, 238);
+  background: rgb(6, 234, 246);
+  z-index: 1;
 }
