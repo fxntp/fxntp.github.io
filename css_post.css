@@ -13,6 +13,7 @@
   height: 390px;
   border-radius: 20px;
   overflow: hidden;
+  margin-top: 2.5%;
 }
 
 .insert-form {
@@ -51,4 +52,11 @@ input:focus {
 
 .btn-submit:hover {
   background-color: blueviolet;
+}
+
+@media screen and (max-width: 600px) {
+  .form{
+    width: 100%;
+    margin-top: 0;
+  }
 }
