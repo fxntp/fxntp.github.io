@@ -3,9 +3,11 @@
   padding: 0;
   box-sizing: border-box;
 }
-.main{
+
+.main {
   height: fit-content;
 }
+
 .form {
   font-family: "Audiowide", sans-serif;
   background-color: rgb(255, 255, 255);
@@ -17,7 +19,7 @@
 }
 
 .insert-form {
-  
+
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -39,7 +41,7 @@ input:focus {
 }
 
 .btn-submit {
-  color:white;
+  color: white;
   font-family: "Audiowide", sans-serif;
   display: flex;
   justify-content: center;
@@ -47,15 +49,38 @@ input:focus {
   padding: 20px;
   outline: 0;
   border: 0;
-  background-color: rgb(179, 130, 225);
+  background-color: #814fc3;
+  z-index: 0;
+  cursor: pointer;
+  position: relative;
 }
 
-.btn-submit:hover {
-  background-color: blueviolet;
+.btn-submit:before {
+  content: "";
+    background: linear-gradient(45deg,
+        #00ffd5,
+        #002bff,
+        #7a00ff,
+        #ff00c8,
+        #ff0000);
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    border-radius: 10px;
+}
+.btn-submit:hover:before {
+  opacity: 1;
 }
 
 @media screen and (max-width: 600px) {
-  .form{
+  .form {
     width: 100%;
     margin-top: 0;
   }

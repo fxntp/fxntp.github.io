@@ -39,6 +39,7 @@ body {
 
 }
 th {
+  border-bottom: 2px inset;
   padding-top: 15px;
   padding-bottom: 15px;
   background:purple ;
@@ -48,8 +49,8 @@ th {
 
 }
 td {
+  border-bottom: 2px inset;
   font-size: clamp(8px,1vw,16px);
-  border-style: none;
   padding: 10px;
   text-align:center;
   color: white;

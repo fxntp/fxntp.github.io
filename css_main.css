@@ -44,7 +44,7 @@
   .nameMain {
     text-align: center;
     font-family: "Audiowide", sans-serif;
-    background: linear-gradient(to right, blue, #af01ef, #291b5a, #091713, rgb(0, 0, 46));
+    background: linear-gradient(to right, blue, #af01ef, #291b5a, #091713, rgb(0, 0, 46),rgb(128, 17, 0));
     background-size: 200% auto;
     background-clip: text;
     -webkit-background-clip: text;
