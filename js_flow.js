@@ -35,12 +35,13 @@ document.addEventListener('DOMContentLoaded', function () {
       }
     }
   }
+  
   fetch(
     "https://midterm-exam-010723313-2022.herokuapp.com/device?sensor_type=flow-transducer"
   )
     .then((res) => res.json())
     .then((FT) => {
-      showFT(FT);
+     showFT(FT)
     })
     .catch((error) => {
       console.error("Error:", error);
