@@ -7,8 +7,8 @@ const unitsensorInput = document.querySelector("#sensor_unit");
 const valuesensorInput = document.querySelector("#sensor_value");
 
 function insertSubmit(event) {
-  event.preventDefault();
-  const user = {
+  event.preventDefault(); //ป้องกันไม่ให้ form submit ตัวเอง
+  const data = {
     st_id: idInput.value,
     st_name: nameInput.value,
     sensor_name: namesensorInput.value,
@@ -21,10 +21,10 @@ function insertSubmit(event) {
   showConfirmButton: true})
 fetch("https://midterm-exam-010723313-2022.herokuapp.com/student_post", {
   method: 'POST',
-  headers: {
-    'Content-Type': 'application/json;charset=utf-8'
+  headers: { 
+    'Content-Type': 'application/json;charset=utf-8' //บอกว่าข้อมูลที่จะส่งให้ API คือข้อมูลเเบบ JSON
   },
-  body: JSON.stringify(user)
+  body: JSON.stringify(data) //เเปลง OBJECT เป็น string
 })
   .then((res) => res.json())
   .then((json) => {

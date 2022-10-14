@@ -17,20 +17,18 @@ function showFT(FT) {
   });
 }
 function filterSearch() {
-  var input, filter, table, tr, td, i, txtValue;
+  var input, filter, tr, td, i, txtValue;
   input = document.getElementById("myInput");
-  filter = input.value.toUpperCase();
-  table = document.getElementById("dataTable");
+  filter = input.value.toUpperCase();//เเปลงค่าที่รับเป็นพิมพ์ใหญ่
   tr = document.getElementsByTagName("tr");
-
   for (i = 0; i < tr.length; i++) {
     td_name = tr[i].getElementsByTagName("td")[2];
     if (td_name) {
-      txtValue = td_name.textContent || td_name.innerText;
-      if (txtValue.toUpperCase().indexOf(filter) > -1) {
-        tr[i].style.display = "";
+      txtValue = td_name.textContent || td_name.innerText; //txtvalue = text ในตัวเเปร td_name
+      if (txtValue.toUpperCase().indexOf(filter) > -1) { //เเปลง txtvalue เป็นตัวใหญ่เเละนำ txt ของ filter มาเปรียบเทียบกันว่าเหมือนกันหรือไม่ ถ้าเหมือนจะเป็น0 เเต่ถ้าไม่จะเป็น -1
+        tr[i].style.display = "";//ถ้าตรงให้ข้อมูลเเสดงเหมือนเดิม
       } else {
-        tr[i].style.display = "none";
+        tr[i].style.display = "none";//ถ้าไม่ตรงให้ข้อมูลหายไป
       }
     }
   }
