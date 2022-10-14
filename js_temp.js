@@ -1,16 +1,17 @@
 function showTT(TT) {
+  var data = TT;
   let placeholder = document.querySelector("#data-TT");
   placeholder.innerHTML = "";
-  Object.keys(TT).forEach((val) => {
+  Object.keys(data).forEach((val) => {
     var rows = `
         <tr>
           <td>${val}</td>
-          <td>${TT[val]["plant-site"]}</td>
-          <td>${TT[val].name}</td>
-          <td>${TT[val].type}</td>
-          <td>${TT[val].range[0]} - ${TT[val].range[1]}</td>
-          <td>${TT[val].value}</td>
-          <td>${TT[val].unit}</td>
+          <td>${data[val]["plant-site"]}</td>
+          <td>${data[val].name}</td>
+          <td>${data[val].type}</td>
+          <td>${data[val].range[0]} - ${data[val].range[1]}</td>
+          <td>${data[val].value}</td>
+          <td>${data[val].unit}</td>
         </tr> 
         `;
     placeholder.innerHTML += rows;

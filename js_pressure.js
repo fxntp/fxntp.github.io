@@ -1,16 +1,17 @@
 function showPT(PT) {
+  var data = PT;
   let placeholder = document.querySelector("#data-PT");
   placeholder.innerHTML = '';
-  Object.keys(PT).forEach((val) => {
+  Object.keys(data).forEach((val) => {
     var rows = `
         <tr>
           <td>${val}</td>
-          <td>${PT[val]["plant-site"]}</td>
-          <td>${PT[val].name}</td>
-          <td>${PT[val].type}</td>
-          <td>${PT[val].range[0]} - ${PT[val].range[1]}</td>
-          <td>${PT[val].value}</td>
-          <td>${PT[val].unit}</td>
+          <td>${data[val]["plant-site"]}</td>
+          <td>${data[val].name}</td>
+          <td>${data[val].type}</td>
+          <td>${data[val].range[0]} - ${data[val].range[1]}</td>
+          <td>${data[val].value}</td>
+          <td>${data[val].unit}</td>
         </tr> 
         `;
     placeholder.innerHTML += rows;

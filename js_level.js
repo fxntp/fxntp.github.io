@@ -1,16 +1,17 @@
 function showLT(LT) {
+  var data = LT;
   let placeholder = document.querySelector("#data-LT");
   placeholder.innerHTML = "";
-  Object.keys(LT).forEach((val) => {
+  Object.keys(data).forEach((val) => {
     var rows = `
         <tr>
           <td>${val}</td>
-          <td>${LT[val]["plant-site"]}</td>
-          <td>${LT[val].name}</td>
-          <td>${LT[val].type}</td>
-          <td>${LT[val].range[0]} - ${LT[val].range[1]}</td>
-          <td>${LT[val].value}</td>
-          <td>${LT[val].unit}</td>
+          <td>${data[val]["plant-site"]}</td>
+          <td>${data[val].name}</td>
+          <td>${data[val].type}</td>
+          <td>${data[val].range[0]} - ${data[val].range[1]}</td>
+          <td>${data[val].value}</td>
+          <td>${data[val].unit}</td>
         </tr> 
         `;
     placeholder.innerHTML += rows;

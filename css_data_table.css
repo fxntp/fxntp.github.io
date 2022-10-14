@@ -6,15 +6,12 @@
 body {
   background: linear-gradient(339deg, #0d201b, #01002e, #1b332d, #002033);
   background-size: 400% 400%;
-  height: 100%;
-  width: 100%;
-  overflow: hidden;
   padding: 0;
   margin: 0px;
 }
 .content-tb{
+  height: 400px;
   width: 100%;
-  height: auto;
   display: flex;
   justify-content:center ;
   flex-direction: column;
@@ -32,6 +29,7 @@ body {
 }
 .tableDATA{
   overflow-x:auto ;
+  overflow-y:auto ;
 }
 .tableData {
   font-family: "Audiowide", sans-serif;
