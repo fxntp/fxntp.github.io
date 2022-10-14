@@ -16,25 +16,28 @@ function insertSubmit(event) {
     sensor_unit: unitsensorInput.value,
     sensor_value: valuesensorInput.value,
   };
-  fetch("https://midterm-exam-010723313-2022.herokuapp.com/student_post", {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/json;charset=utf-8'
-    },
-    body: JSON.stringify(user)
+  Swal.fire({ icon: 'success',
+  title: 'Successfully',
+  showConfirmButton: true})
+fetch("https://midterm-exam-010723313-2022.herokuapp.com/student_post", {
+  method: 'POST',
+  headers: {
+    'Content-Type': 'application/json;charset=utf-8'
+  },
+  body: JSON.stringify(user)
+})
+  .then((res) => res.json())
+  .then((json) => {
   })
-    .then((res) => res.json())
-    .then((json) => {
-    })
 
-    .catch((error) => {
-      console.log(error.message);
-    });
-  idInput.value = '';
-  nameInput.value = '';
-  namesensorInput.value = '';
-  typesensorInput.value = '';
-  unitsensorInput.value = '';
-  valuesensorInput.value = '';
+  .catch((error) => {
+    console.log(error.message);
+  });
+idInput.value = '';
+nameInput.value = '';
+namesensorInput.value = '';
+typesensorInput.value = '';
+unitsensorInput.value = '';
+valuesensorInput.value = '';
 }
 insertForm.addEventListener("submit", insertSubmit);
