@@ -17,6 +17,7 @@ document.addEventListener("DOMContentLoaded", function () {
       sensor_unit: unitsensorInput.value,
       sensor_value: valuesensorInput.value,
     };
+    console.log(sensor_value);
     Swal.fire({
       icon: 'success',
       title: 'Successfully',

@@ -1,4 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
+  const myInput = document.querySelector("#myInput");
+  myInput.onkeyup = filterSearch;
   function showTT(TT) {
     var data = TT;
     let placeholder = document.querySelector("#data-TT");

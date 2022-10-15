@@ -1,4 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
+  const myInput = document.querySelector("#myInput");
+  myInput.onkeyup = filterSearch;
   function showFT(FT) {
     var data = FT;
     let placeholder = document.querySelector("#data-FT");//เลือกtbody
@@ -22,6 +24,7 @@ document.addEventListener('DOMContentLoaded', function () {
     var input, filter, tr, td, i, txtValue;
     input = document.getElementById("myInput");
     filter = input.value.toUpperCase();//เเปลงค่าที่รับเป็นพิมพ์ใหญ่
+    console.log(filter);
     tr = document.getElementsByTagName("tr");
     for (i = 0; i < tr.length; i++) {
       td_name = tr[i].getElementsByTagName("td")[2];
@@ -46,6 +49,4 @@ document.addEventListener('DOMContentLoaded', function () {
     .catch((error) => {
       console.error("Error:", error);
     });
-
-
 })
